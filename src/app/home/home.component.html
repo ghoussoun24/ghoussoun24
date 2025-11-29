@@ -1,0 +1,43 @@
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Glow like never before!</h1>
+    <button class="btn-primary">Shop Now</button>
+  </div>
+  <img src="assets/hero-products.png" class="hero-img">
+</div>
+
+<!-- Featured Products -->
+<section class="featured-section">
+  <h2>Featured Products</h2>
+  <div class="product-list">
+    <div class="product-card" *ngFor="let p of products">
+      <img [src]="p.image" />
+      <h4>{{ p.name }}</h4>
+      <p>{{ p.price }} DT</p>
+    </div>
+  </div>
+</section>
+
+<!-- Promo section -->
+<section class="promo-section">
+  <div class="promo-text">
+    <h2>Spring Beauty Sale</h2>
+    <p>Up to <span class="highlight">40% Off</span></p>
+    <button class="btn-primary">Shop Now</button>
+  </div>
+  <img src="assets/promo-products.png" class="promo-img">
+</section>
+
+<!-- Categories / Services -->
+<section class="category-section">
+  <div class="category-card" *ngFor="let c of categories">
+    <img [src]="c.image" />
+    <h3>{{ c.title }}</h3>
+    <p>{{ c.description }}</p>
+  </div>
+</section>
+
+<footer>
+  <p>BEAUTY SHOP – All rights reserved © 2025</p>
+</footer>
+

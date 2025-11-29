@@ -1,0 +1,281 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f6e4e8;
+  padding: 80px;
+  border-radius: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  color: #333;
+}
+
+.hero-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.btn-primary {
+  background: #e88ca6;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background: #d96d90;
+}
+
+/* FEATURED PRODUCTS */
+.featured-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 180px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100px;
+  height: auto;
+}
+
+/* PROMO SECTION */
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fde6eb;
+  padding: 70px;
+  margin-top: 40px;
+  border-radius: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.promo-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.promo-text h2 {
+  font-size: 35px;
+}
+
+.highlight {
+  color: #e87ea3;
+  font-weight: bold;
+}
+
+.promo-img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* CATEGORIES */
+.category-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 260px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #f4f4f4;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablettes (max 1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .promo-section {
+    padding: 50px;
+  }
+
+  .promo-text h2 {
+    font-size: 30px;
+  }
+}
+
+/* Smartphones (max 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-img {
+    max-width: 300px;
+  }
+
+  .promo-section {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo-text h2 {
+    font-size: 24px;
+  }
+
+  .promo-img {
+    max-width: 280px;
+  }
+
+  .product-list {
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 150px;
+  }
+
+  .category-section {
+    gap: 20px;
+  }
+
+  .category-card {
+    width: 220px;
+  }
+}
+
+/* Petits smartphones (max 480px) */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-img {
+    max-width: 250px;
+  }
+
+  .btn-primary {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .promo-section {
+    padding: 20px;
+  }
+
+  .promo-text h2 {
+    font-size: 20px;
+  }
+
+  .promo-img {
+    max-width: 220px;
+  }
+
+  .product-card {
+    width: 140px;
+    padding: 15px;
+  }
+
+  .product-card img {
+    width: 80px;
+  }
+
+  .category-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .featured-section,
+  .category-section {
+    padding: 40px 15px;
+    margin: 40px 10px;
+  }
+}
