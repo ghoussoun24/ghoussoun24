@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  standalone:true,
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -21,6 +21,4 @@ export class HomeComponent {
     { image: 'assets/cat1.png', title: 'MAKEUP ESSENTIALS', description: 'High quality makeup tools.' },
     { image: 'assets/cat2.png', title: 'NATURAL BEAUTY', description: 'Beauty inspired by nature.' },
   ];
-
-
 }

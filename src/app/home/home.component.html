@@ -3,7 +3,7 @@
     <h1>Glow like never before!</h1>
     <button class="btn-primary">Shop Now</button>
   </div>
-  <img src="assets/hero-products.png" class="hero-img">
+<img src="assets/cat.png" class="hero-img" alt="Hero Products">
 </div>
 
 <!-- Featured Products -->
@@ -11,7 +11,7 @@
   <h2>Featured Products</h2>
   <div class="product-list">
     <div class="product-card" *ngFor="let p of products">
-      <img [src]="p.image" />
+      <img [src]="p.image" [alt]="p.name" />
       <h4>{{ p.name }}</h4>
       <p>{{ p.price }} DT</p>
     </div>
@@ -25,13 +25,13 @@
     <p>Up to <span class="highlight">40% Off</span></p>
     <button class="btn-primary">Shop Now</button>
   </div>
-  <img src="assets/promo-products.png" class="promo-img">
+  <img src="assets/cat1.png" class="promo-img" alt="Promo Products">
 </section>
 
 <!-- Categories / Services -->
 <section class="category-section">
   <div class="category-card" *ngFor="let c of categories">
-    <img [src]="c.image" />
+    <img [src]="c.image" [alt]="c.title" />
     <h3>{{ c.title }}</h3>
     <p>{{ c.description }}</p>
   </div>
@@ -40,4 +40,3 @@
 <footer>
   <p>BEAUTY SHOP – All rights reserved © 2025</p>
 </footer>
-
